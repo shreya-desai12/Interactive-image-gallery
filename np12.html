@@ -1,0 +1,138 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+<title>The Picture Patch | Welcome</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+ body{
+   font-family:sans-serif;
+   color:white;
+   margin:0;
+   padding:0;
+   background-color:black;
+}
+.head{
+   text-align:center;
+   color:white;
+   background-color:black;
+   margin:0;
+   padding:20px;
+   border-bottom:#e8491d 3px solid;
+   font-family:sans-serif;
+   min-height:55px;
+   font-size:55px;
+ 
+}
+.img{
+   margin:10px 0 10px 0;
+   width:50%;
+   height:auto;
+   
+   
+}
+
+@media screen and (max-width: 1000px){
+  .head h1, .img
+ {
+    float:none;
+    text-align:center;
+    width:100%;
+    margin:0;
+  }
+  .lcbox{
+    float:left;
+    width:100%;
+}
+}
+.lcbox{
+   float:right;
+   margin:10px;
+   width:47%;
+   height:auto;
+   border-style: solid;
+   border-color:#e8491d;
+   padding:0  10px 10px 10px;
+   border-style: ridge;
+ 
+}
+.cbox{
+  background:white;
+  color:black;
+  padding:5px;
+  margin-top:5px;
+}
+
+#commentbox{
+  color:#e8491d;
+  width:100%;
+
+}
+.button{
+  
+  margin-top:2px;
+  font-size:15px;
+  width:100%;
+} 
+ul{
+  padding:0 0 0 5px;
+  margin-top:30px;
+}
+   
+ li{
+    border: lightgray;
+    border-radius: 5px;
+    background:lightgray;
+    margin:5px 0 3px 0;
+    list-style-type: none;
+    padding:5px;
+}
+#myImage{
+   margin-top:0;
+}
+.like{
+  margin-top:10px;
+  
+}
+.comment{
+   float:left;
+   margin:5px 0 10px 0;
+}
+</style>
+</head>
+<body>
+<h1 class="head">The Picture Patch</h1>
+ <img class="img" src="images/np12.jpg">
+<div class="lcbox">
+   <p class="like">Click the button to like</p>
+   <img id="myImage" onclick="changeImage()" src="images/unlike.png" width="30px" height="30px">
+  
+   <script>
+    function changeImage() {
+     var image = document.getElementById('myImage');
+      if (image.src.match("images/like.png")) {
+        image.src = "images/unlike.png";
+      } else {
+        image.src = "images/like.png";
+      }
+    }
+   </script>
+<div class="cbox">
+<p class="comment">Post your comments below</p>
+<ul id="comments">
+</ul>
+<input id="commentbox" onfocus="this.value=''" >
+<button class="button" onclick="f()" type="reset">Post</button>
+<script>
+comments=document.getElementById('comments');
+function f(){
+  x=document.createElement('li');
+  x.innerText=document.getElementById('commentbox').value;
+  comments.appendChild(x);
+  document.getElementById('commentbox').reset();
+  document.getElementById("commentbox").submit();
+}
+</script>
+</div>
+</div>
+</body>
+</html>

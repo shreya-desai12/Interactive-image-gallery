@@ -1,0 +1,22 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<body>
+<img id="myImage" onclick="changeImage()" src="images/unlike.png" width="50px" height="50px">
+
+<p>Click the button to like.</p>
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("images/like.png")) {
+        image.src = "images/unlike.png";
+    } else {
+        image.src = "images/like.png";
+    }
+}
+</script>
+
+</body>
+</html>

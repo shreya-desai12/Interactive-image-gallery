@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>The Picture Patch | Newyork</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+ body{
+   font-family:sans-serif;
+   color:white;
+   margin:0;
+   padding:0;
+   background-color:black;
+}
+.head{
+   text-align:center;
+   color:white;
+   background-color:black;
+   margin:0;
+   padding:20px;
+   border-bottom:#e8491d 3px solid;
+   font-family:sans-serif;
+   min-height:55px;
+   font-size:55px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(30,30,30);
+    
+}
+
+li {
+    float: left;
+    display:inline;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color:#e8491d;
+    font-weight:bold;
+}
+.active{
+  color:#e8491d;
+  text-decoration:underline;
+  text-decoration-color:#e8491d;
+  font-weight:bold;
+}
+.gallery{
+  background-color:black;
+  text-align:center;
+  padding:10px;
+}
+.gallery img{
+   padding:5px 10px;
+   filter:grayscale(100%);
+   transition:0.5s;
+} 
+.gallery img:hover{
+   filter:grayscale(0);
+   transform:scale(1.1);
+}
+.container{
+  width:100%;
+  text-align:center;
+  margin:auto;
+  overflow:hidden;
+}
+
+.button1{
+  height:30px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('C:/Users/shreya desai/Desktop/intgallery/images/bg1.jpg') no-repeat 0-500px;
+  text-align:center;
+  color:#ffffff;
+  opacity:0.9;
+}
+
+#showcase h1{
+  margin-top:200px;
+  font-size:70px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:black;
+  border-bottom:#e8491d 3px solid; 
+}
+#newsletter h1{
+  float:left;
+  text-decoration:underline;
+  text-decoration-color:#e8491d;
+}
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+
+@media(max-width: 768px){
+  .head h1,
+  .nav,.nav li,
+  #newsletter h1,
+  #newsletter form
+ {
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+    .head ,.nav{
+    float:none;
+    text-align:center;
+   width:100%;
+}
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button1{
+    display:block;
+    width:100%;
+    text-align:center;
+    margin-bottom:10px;
+  }
+
+  #newsletter form input[type="email"]{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display:flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}  
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+
+@media(max-width: 768px){
+  .head h1,
+  .nav,.nav li,
+  #newsletter h1,
+  #newsletter form
+ {
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+    .head ,.nav{
+    float:none;
+    text-align:center;
+   width:100%;
+}
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button1{
+    display:block;
+    width:100%;
+    text-align:center;
+    margin-bottom:10px;
+  }
+
+  #newsletter form input[type="email"]{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1400px) {
+    .column {
+        flex:25%;
+        max-width: 25%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+<h1 class="head">The Picture Patch</h1>
+
+<ul class="nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a class="active" href="newyork.html">NewYork</a></li>
+  <li><a href="paris.html">Paris</a></li>
+  <li><a href="london.html">London</a></li>
+</ul>
+<section id="showcase">
+  <div class="container">
+   <h1>NEW YORK</h1>
+   <p>Travel at its truest is thus an ironic experience, and the best travelers… seem to be those able to hold two or three inconsistent ideas in their minds at the same time, or able to regard themselves as at once serious persons and clowns.</p>
+</div>
+</section>
+<section id="newsletter">
+  <div class="container">
+    <h1>Subscribe To Our Newsletter</h1>
+    <form target="_self">
+      <input type="email" placeholder="Enter Email">
+      <input type="submit" class="button1" value="Subscribe">
+    </form>
+  </div>
+</section>
+<div class="gallery">
+ <div class="row"> 
+  <div class="column">
+   <a href="np1.html"><img src="images/np1.jpg" style="width:100%"></a>
+   <a href="np2.html"><img src="images/np2.jpg" style="width:100%"></a>
+   <a href="np9.html"><img src="images/np9.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+   <a href="np3.html"><img src="images/np3.jpg" style="width:100%"></a>
+   <a href="np4.html"><img src="images/np4.jpg" style="width:100%"></a>
+   <a href="np10.html"><img src="images/np10.jpg" style="width:100%"></a>
+   </div>
+  <div class="column">
+   <a href="np5.html"><img src="images/np5.jpg" style="width:100%"></a>
+   <a href="np6.html"><img src="images/np6.jpg" style="width:100%"></a>
+   <a href="np11.html"><img src="images/np11.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+   <a href="np7.html"><img src="images/np7.jpg" style="width:100%"></a>
+   <a href="np8.html"><img src="images/np8.jpg" style="width:100%"></a>
+   <a href="np12.html"><img src="images/np12.jpg" style="width:100%"></a>
+  </div>
+ </div>
+</div>
+<footer>
+  <p>The Picture Patch, Copyright &copy; 2018</p>
+</footer>
+</body>
+</html>
